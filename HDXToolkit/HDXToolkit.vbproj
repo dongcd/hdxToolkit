@@ -1,0 +1,749 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8698E064-FEA8-4B29-9DAD-4EBB7E0A1F99}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>HDXToolkit.My.MyApplication</StartupObject>
+    <RootNamespace>HDXToolkit</RootNamespace>
+    <AssemblyName>HDXToolkit</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>HDXToolkit.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>true</Prefer32Bit>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>HDXToolkit.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AndroidLib, Version=1.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Desktop\AndroidLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.Designer.vb">
+      <DependentUpon>about.vb</DependentUpon>
+    </Compile>
+    <Compile Include="about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adbConnected.Designer.vb">
+      <DependentUpon>adbConnected.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adbConnected.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="advancedUtils.Designer.vb">
+      <DependentUpon>advancedUtils.vb</DependentUpon>
+    </Compile>
+    <Compile Include="advancedUtils.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ads\disableAdsSuccess.Designer.vb">
+      <DependentUpon>disableAdsSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ads\disableAdsSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ads\enableAdsSuccess.Designer.vb">
+      <DependentUpon>enableAdsSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ads\enableAdsSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode1x03.Designer.vb">
+      <DependentUpon>errorCode1x03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode1x03.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recovery\flashTwrp.Designer.vb">
+      <DependentUpon>flashTwrp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recovery\flashTwrp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="recovery\twrpPre.Designer.vb">
+      <DependentUpon>twrpPre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recovery\twrpPre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTA\disableOta.Designer.vb">
+      <DependentUpon>disableOta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OTA\disableOta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTA\enableOta.Designer.vb">
+      <DependentUpon>enableOta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OTA\enableOta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode7x01.Designer.vb">
+      <DependentUpon>errorCode7x01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode7x01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode3x01.Designer.vb">
+      <DependentUpon>errorCode3x01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode3x01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode4x01.Designer.vb">
+      <DependentUpon>errorCode4x01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode4x01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode5x01.Designer.vb">
+      <DependentUpon>errorCode5x01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode5x01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode6x01.Designer.vb">
+      <DependentUpon>errorCode6x01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode6x01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode9x01.Designer.vb">
+      <DependentUpon>errorCode9x01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode9x01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode1x01.Designer.vb">
+      <DependentUpon>errorCode1x01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode1x01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode3x02.Designer.vb">
+      <DependentUpon>errorCode3x02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode3x02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode4x02.Designer.vb">
+      <DependentUpon>errorCode4x02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode4x02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode5x02.Designer.vb">
+      <DependentUpon>errorCode5x02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode5x02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode6x02.Designer.vb">
+      <DependentUpon>errorCode6x02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode6x02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode9x02.Designer.vb">
+      <DependentUpon>errorCode9x02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode9x02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode7x02.Designer.vb">
+      <DependentUpon>errorCode7x02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode7x02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode1x02.Designer.vb">
+      <DependentUpon>errorCode1x02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode1x02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode2x03.Designer.vb">
+      <DependentUpon>errorCode2x03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode2x03.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode7x03.Designer.vb">
+      <DependentUpon>errorCode7x03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode7x03.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode8x01.Designer.vb">
+      <DependentUpon>errorCode8x01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode8x01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode8x02.Designer.vb">
+      <DependentUpon>errorCode8x02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode8x02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode8x03.Designer.vb">
+      <DependentUpon>errorCode8x03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode8x03.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recovery\installSafestrap.Designer.vb">
+      <DependentUpon>installSafestrap.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recovery\installSafestrap.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="options.Designer.vb">
+      <DependentUpon>options.vb</DependentUpon>
+    </Compile>
+    <Compile Include="options.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTA\disableOtaSuccess.Designer.vb">
+      <DependentUpon>disableOtaSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OTA\disableOtaSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OTA\enableOtaSuccess.Designer.vb">
+      <DependentUpon>enableOtaSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OTA\enableOtaSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode0x01.Designer.vb">
+      <DependentUpon>errorCode0x01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode0x01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode0x02.Designer.vb">
+      <DependentUpon>errorCode0x02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode0x02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode2x02.Designer.vb">
+      <DependentUpon>errorCode2x02.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode2x02.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\errorCode2x01.Designer.vb">
+      <DependentUpon>errorCode2x01.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\errorCode2x01.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HDXPosed\hdxposedPre.Designer.vb">
+      <DependentUpon>hdxposedPre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HDXPosed\hdxposedPre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HDXPosed\hdxposedSuccess.Designer.vb">
+      <DependentUpon>hdxposedSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HDXPosed\hdxposedSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HDXPosed\installHdxposed.Designer.vb">
+      <DependentUpon>installHdxposed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HDXPosed\installHdxposed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HDXPosed\installXposed.Designer.vb">
+      <DependentUpon>installXposed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HDXPosed\installXposed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Store\playStore1.Designer.vb">
+      <DependentUpon>playStore1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Play Store\playStore1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Store\playStore2.Designer.vb">
+      <DependentUpon>playStore2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Play Store\playStore2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Store\playStore3.Designer.vb">
+      <DependentUpon>playStore3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Play Store\playStore3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Store\playStore4.Designer.vb">
+      <DependentUpon>playStore4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Play Store\playStore4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Store\playStorePre.Designer.vb">
+      <DependentUpon>playStorePre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Play Store\playStorePre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Play Store\playStoreSuccess.Designer.vb">
+      <DependentUpon>playStoreSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Play Store\playStoreSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperSU\installSuperSu.Designer.vb">
+      <DependentUpon>installSuperSu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperSU\installSuperSu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="root\installTowelroot.Designer.vb">
+      <DependentUpon>installTowelroot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="root\installTowelroot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="root\jcaseRoot.Designer.vb">
+      <DependentUpon>jcaseRoot.vb</DependentUpon>
+    </Compile>
+    <Compile Include="root\jcaseRoot.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="root\jcaseRootSuccess.Designer.vb">
+      <DependentUpon>jcaseRootSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="root\jcaseRootSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelSelection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modelSelection.Designer.vb">
+      <DependentUpon>modelSelection.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainToolkit.Designer.vb">
+      <DependentUpon>mainToolkit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainToolkit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adbChecking.Designer.vb">
+      <DependentUpon>adbChecking.vb</DependentUpon>
+    </Compile>
+    <Compile Include="adbChecking.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SuperSU\superSuPre.Designer.vb">
+      <DependentUpon>superSuPre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperSU\superSuPre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuperSU\superSuSuccess.Designer.vb">
+      <DependentUpon>superSuSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SuperSU\superSuSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="root\towelrootPre.Designer.vb">
+      <DependentUpon>towelrootPre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="root\towelrootPre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="root\towelrootSuccess.Designer.vb">
+      <DependentUpon>towelrootSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="root\towelrootSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recovery\safestrapPre.Designer.vb">
+      <DependentUpon>safestrapPre.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recovery\safestrapPre.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="recovery\safestrapSuccess.Designer.vb">
+      <DependentUpon>safestrapSuccess.vb</DependentUpon>
+    </Compile>
+    <Compile Include="recovery\safestrapSuccess.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="errors\warningCode8x03.Designer.vb">
+      <DependentUpon>warningCode8x03.vb</DependentUpon>
+    </Compile>
+    <Compile Include="errors\warningCode8x03.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adbConnected.resx">
+      <DependentUpon>adbConnected.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ads\disableAdsSuccess.resx">
+      <DependentUpon>disableAdsSuccess.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ads\enableAdsSuccess.resx">
+      <DependentUpon>enableAdsSuccess.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="advancedUtils.resx">
+      <DependentUpon>advancedUtils.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode1x03.resx">
+      <DependentUpon>errorCode1x03.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recovery\twrpPre.resx">
+      <DependentUpon>twrpPre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTA\disableOta.resx">
+      <DependentUpon>disableOta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTA\enableOta.resx">
+      <DependentUpon>enableOta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode7x01.resx">
+      <DependentUpon>errorCode7x01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode3x01.resx">
+      <DependentUpon>errorCode3x01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode4x01.resx">
+      <DependentUpon>errorCode4x01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode5x01.resx">
+      <DependentUpon>errorCode5x01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode6x01.resx">
+      <DependentUpon>errorCode6x01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode9x01.resx">
+      <DependentUpon>errorCode9x01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode1x01.resx">
+      <DependentUpon>errorCode1x01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode3x02.resx">
+      <DependentUpon>errorCode3x02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode4x02.resx">
+      <DependentUpon>errorCode4x02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode5x02.resx">
+      <DependentUpon>errorCode5x02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode6x02.resx">
+      <DependentUpon>errorCode6x02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode9x02.resx">
+      <DependentUpon>errorCode9x02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode7x02.resx">
+      <DependentUpon>errorCode7x02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode1x02.resx">
+      <DependentUpon>errorCode1x02.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode2x03.resx">
+      <DependentUpon>errorCode2x03.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode7x03.resx">
+      <DependentUpon>errorCode7x03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode8x01.resx">
+      <DependentUpon>errorCode8x01.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode8x02.resx">
+      <DependentUpon>errorCode8x02.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode8x03.resx">
+      <DependentUpon>errorCode8x03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recovery\installSafestrap.resx">
+      <DependentUpon>installSafestrap.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="options.resx">
+      <DependentUpon>options.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTA\disableOtaSuccess.resx">
+      <DependentUpon>disableOtaSuccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OTA\enableOtaSuccess.resx">
+      <DependentUpon>enableOtaSuccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode0x01.resx">
+      <DependentUpon>errorCode0x01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode0x02.resx">
+      <DependentUpon>errorCode0x02.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode2x02.resx">
+      <DependentUpon>errorCode2x02.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\errorCode2x01.resx">
+      <DependentUpon>errorCode2x01.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HDXPosed\hdxposedPre.resx">
+      <DependentUpon>hdxposedPre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HDXPosed\hdxposedSuccess.resx">
+      <DependentUpon>hdxposedSuccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HDXPosed\installHdxposed.resx">
+      <DependentUpon>installHdxposed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HDXPosed\installXposed.resx">
+      <DependentUpon>installXposed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Store\playStore1.resx">
+      <DependentUpon>playStore1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Store\playStore2.resx">
+      <DependentUpon>playStore2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Store\playStore3.resx">
+      <DependentUpon>playStore3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Store\playStore4.resx">
+      <DependentUpon>playStore4.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Store\playStorePre.resx">
+      <DependentUpon>playStorePre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Play Store\playStoreSuccess.resx">
+      <DependentUpon>playStoreSuccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperSU\installSuperSu.resx">
+      <DependentUpon>installSuperSu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="root\installTowelroot.resx">
+      <DependentUpon>installTowelroot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="root\jcaseRoot.resx">
+      <DependentUpon>jcaseRoot.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="root\jcaseRootSuccess.resx">
+      <DependentUpon>jcaseRootSuccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modelSelection.resx">
+      <DependentUpon>modelSelection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adbChecking.resx">
+      <DependentUpon>adbChecking.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainToolkit.resx">
+      <DependentUpon>mainToolkit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperSU\superSuPre.resx">
+      <DependentUpon>superSuPre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuperSU\superSuSuccess.resx">
+      <DependentUpon>superSuSuccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="root\towelrootPre.resx">
+      <DependentUpon>towelrootPre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="root\towelrootSuccess.resx">
+      <DependentUpon>towelrootSuccess.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recovery\safestrapPre.resx">
+      <DependentUpon>safestrapPre.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="errors\warningCode8x03.resx">
+      <DependentUpon>warningCode8x03.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="recovery\safestrapSuccess.resx">
+      <DependentUpon>safestrapSuccess.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\app.manifest">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Resources\google\Account Manager 4.0.3 %28239410%29.apk" />
+    <None Include="Resources\google\Play Services 6.5.96 %281630522-036%29.apk" />
+    <None Include="Resources\google\Play Store 5.1.11.apk" />
+    <None Include="Resources\root\exploitThor" />
+    <None Include="Resources\root\exploitApollo" />
+    <None Include="Resources\HDXPosed 1.3.apk" />
+    <None Include="Resources\root\root.sh" />
+    <None Include="Resources\google\Services Framework 4.0.4 %28338691%29.apk" />
+    <None Include="Resources\root\su" />
+    <None Include="Resources\root\towelroot v3.apk" />
+    <None Include="Resources\recovery\apollo\Safestrap %28apollo%29 3.72.apk" />
+    <None Include="Resources\recovery\apollo\Safestrap %28apollo%29 3.75 b02.apk" />
+    <None Include="Resources\recovery\thor\Safestrap %28thor%29 3.72.apk" />
+    <None Include="Resources\recovery\thor\Safestrap %28thor%29 3.75 b02.apk" />
+    <None Include="Resources\root\SuperSU 2.40.apk" />
+    <None Include="Resources\recovery\apollo\TWRP %28apollo%29 2.8.1.0.img" />
+    <None Include="Resources\recovery\thor\TWRP %28thor%29 2.8.1.0.img" />
+    <None Include="Resources\Xposed v33.apk" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\amazonLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img\header.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

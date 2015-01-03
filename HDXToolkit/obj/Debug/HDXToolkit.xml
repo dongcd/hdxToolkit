@@ -1,0 +1,104 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HDXToolkit
+</name>
+</assembly>
+<members>
+<member name="P:HDXToolkit.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.amazonLogo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.exploitApollo">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.exploitThor">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.gAccountManagerApk">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.gPlayServicesApk">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.gPlayStoreApk">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.gServicesFrameworkApk">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.hdxposedApk">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.header">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.rootScript">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.safestrapApollo372">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.safestrapApollo375b02">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.safestrapThor372">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.safestrapThor375b02">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.suBinary">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.superSuApk">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.towelrootApk">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.twrpApollo">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.twrpThor">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="P:HDXToolkit.My.Resources.Resources.xposedApk">
+	<summary>
+  Looks up a localized resource of type System.Byte[].
+</summary>
+</member><member name="T:HDXToolkit.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>
